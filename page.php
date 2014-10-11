@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
-  <div class="container">   
+    <div class="container-fluid">  
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-9" id="page-body">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
           <div class="page-header">
-            <h1><?php the_title(); ?></h1>
+            <h1 id="page-title"><?php the_title(); ?></h1>
           </div>
 
           <?php the_content(); ?>

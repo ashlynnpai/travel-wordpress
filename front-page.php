@@ -32,18 +32,18 @@
     <div class="row" id="row-two">
           
         <div class="col-md-4">
-            <h2>Heading</h2>
-    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <h2><img class="icon" src="wp-content/themes/travel/img/people.png"/></h2>
+    <p>Experience the local community through work, study and volunteering.  Opportunities are available ranging from a few hours to years.</p>
         </div>  
           
         <div class="col-md-4">
-            <h2>Heading</h2>
-    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <h2><img class="icon" src="wp-content/themes/travel/img/tunnel.png"/></h2>
+    <p>Make long distance journeys by train.  Hike or bike to the next city ... or country.  See more of the country by trying out different means of travel. </p>
         </div>    
           
         <div class="col-md-4">
-            <h2>Heading</h2>
-    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <h2><img class="icon" src="wp-content/themes/travel/img/dollar.png"/></h2>
+    <p>Save money without sacrificing the quality of your experience.  Try the street food or rent an apartment from a local. </p>
         </div>      
                
     </div>      

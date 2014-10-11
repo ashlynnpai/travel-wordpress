@@ -1,4 +1,4 @@
-<div class="col-md-3 sidebar" id="sidebar">
+<div class="col-md-3 sidebar" class="sidebar">
 
 	<?php if ( ! dynamic_sidebar( 'page' ) ): ?>
 

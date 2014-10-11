@@ -10,7 +10,7 @@
 <?php endif; ?>
 
 <div id="comments-section">
-<h1>Comments</h1>
+<h3 id="comments-title">Comments</h3>
 <?php if($comments) : ?>
   	<ol>
     	<?php foreach($comments as $comment) : ?>

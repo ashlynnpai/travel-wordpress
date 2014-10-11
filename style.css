@@ -15,15 +15,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 /* Main Layout */
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;;
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #DAC3C3;  
+    background-color: #ECD4D4;  
+    background-color: #FFF5F5;
+    font-size: 16px;
 }
 
 .widget {
-	margin: 10px 0 30px;
+    padding: 0 5%;
 }
 
 /* Landing Page */
@@ -39,28 +42,39 @@ body {
 }
 
 .jumbotron h1 {
-    font-family: 'Pompiere',sans-serif;
-    font-size: 60px;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 30px;
 }
 
 .row h2 {
-    font-family: 'Pompiere',sans-serif;
 }
 
 .row p {
     font-size: 18px;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    line-height: 150%;
 }
   
 #row-one {
     background-color: #C0A2A2;
+    padding: 5%;
 }
 
 #row-two {
     background-color: #D7E5D7;
+    padding: 0 3% 3% 3%;
 }
 
-.row h2, p {
-    margin: 4% 4%;
+#row-one h2, p {
+    margin: 15%;
+}
+
+#row-two h2, p {
+    margin: 15%;
+}
+
+.icon {
+    margin-left: 40%; 
 }
 
 /* Blog */
@@ -69,16 +83,29 @@ article.post {
 	margin: 20px 0 40px;
 }
 
+.post {
+    padding: 20px;
+}
+
 #blog-list, #blog-post {
     margin: 2%; 
 }
 
 #blog-post {
-    padding: 1%;
+    padding: 4%;
+    font-size: 18px;
  }
 
-.entry-title {
-    font-family: 'Pompiere',sans-serif;   
+#blog-head, #page-title {
+    font-family: 'Playball', cursive;
+}
+
+#blog-listing-title {
+    padding: 0;
+}
+
+#page-body {
+    padding-left: 5%;
 }
 
 /* Navigation */
@@ -138,15 +165,32 @@ article.post {
     padding-left: 10px;
 }
 
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 /* Sidebar */
 .sidebar { 
-	margin-top: 40px;
-	color: #444;
+	margin-top: 100px;
+    padding: 50px;
+	background: url("../travel/img/parchment.png") repeat center center;  
+    /* Background pattern from subtlepatterns.com: Old map by Andreas Fohl*/
+}
+
+.sidebar .widget {
+    line-height: 1.5em;
+    margin-bottom: 2em;
 }
 
 /* Images */
 .blog-header {
-    background: url("../travel/img/cezanne.png") no-repeat center center; 
+    background: url("../travel/img/Hicks.png") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -154,31 +198,22 @@ article.post {
     height: 400px;  
 }
 
-.post {
-    background: url("../travel/img/parchment.png") repeat center center;  
-   /* Background pattern from subtlepatterns.com: Old map by Andreas Fohl*/
-    padding: 20px;
-}
-
 .wp-caption { 
-    margin: 5px; 
-    padding: 5px; 
-    border: solid 1px #D7E5D7;
-    background: #D7E5D7;
-    font-family: 'Pompiere',sans-serif;
-}
-
-wp-caption-text {
-    font-size: 14px;
+    border: 1px solid #DDDDDD;
+    line-height: 2;
+    margin: 0 5px 10px;
+    padding: 5px 0 0;
+    text-align: center;
+    background: url("../travel/img/parchment.png") repeat center center; 
 }
 
 /* enable align image */
-img.alignright {float:right; margin:0 0 1em 1em}
-img.alignleft {float:left; margin:0 1em 1em 0}
-img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-.alignright {float:right; }
-.alignleft {float:left; }
-.aligncenter {display: block; margin-left: auto; margin-right: auto}
+    img.alignright {float:right; margin:0 0 1em 1em}
+    img.alignleft {float:left; margin:0 1em 1em 0}
+    img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+    .alignright {float:right; }
+    .alignleft {float:left; }
+    .aligncenter {display: block; margin-left: auto; margin-right: auto}
 
 /* comments */
 
@@ -196,7 +231,7 @@ img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 .comment-author {
     color: #2A5677;
     font-size: 30px;
-    font-family: 'Pompiere',sans-serif;
+    font-family: 'Playball', cursive;
 }
 
 .comment-text {
@@ -205,7 +240,6 @@ img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
 #comments-section h1 {
     font-size: 34px;
-    font-family: 'Pompiere',sans-serif;
     padding: 30px;
 }
 
@@ -219,14 +253,28 @@ img.aligncenter {display: block; margin-left: auto; margin-right: auto}
     background-color: #DBA2A2;
 }
 
-/* etc */
-.next-posts, .prev-posts {
-font-size: 28px;
-padding: 0 10% 5% 10%;
-display: inline-block;
-font-family: 'Pompiere',sans-serif;
+#comments-title {
+    font-family: 'Playball', cursive;
+    padding: 2%;
 }
 
+/* etc */
+/*Older Posts, Newer Posts*/
+.next-posts, .prev-posts {
+    font-size: 20px;
+    padding: 0 10% 5% 10%;
+    display: inline-block;
+ }
+
+/*Slideshow description section*/
+.slideshow_container_slideshow-jquery-image-gallery-custom-styles_1 .slideshow_pagination {
+    bottom: 16px;
+}
+
+/* override default paragraph spacing*/
+p {
+    margin: 1%;
+}
 
 .sticky {
 }
@@ -236,3 +284,4 @@ font-family: 'Pompiere',sans-serif;
 
 .bypostauthor {
 }   
+
