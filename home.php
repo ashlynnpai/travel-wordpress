@@ -13,7 +13,7 @@
 
           <article class="post">
             
-            <h3 id="blog-listing-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            <h3 id="blog-listing-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>             </h3>
             <p>
               By <?php the_author(); ?> 
               on <?php echo the_time('l, F jS, Y');?>
@@ -43,5 +43,5 @@
       <?php get_sidebar( 'blog' ); ?>
 
     </div>
-
+</div>
 <?php get_footer(); ?>

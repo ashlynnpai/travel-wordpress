@@ -46,9 +46,6 @@ body {
     font-size: 30px;
 }
 
-.row h2 {
-}
-
 .row p {
     font-size: 18px;
     font-family: 'Montserrat', 'Open Sans', sans-serif;
@@ -86,15 +83,6 @@ article.post {
 .post {
     padding: 20px;
 }
-
-#blog-list, #blog-post {
-    margin: 2%; 
-}
-
-#blog-post {
-    padding: 4%;
-    font-size: 18px;
- }
 
 #blog-head, #page-title {
     font-family: 'Playball', cursive;
@@ -163,6 +151,7 @@ article.post {
     color: #D7E5D7;
     font-size: 18px;
     padding-left: 10px;
+    margin-right: 20px;
 }
 
 .navbar .navbar-nav {
@@ -178,7 +167,7 @@ article.post {
 /* Sidebar */
 .sidebar { 
 	margin-top: 100px;
-    padding: 50px;
+    padding: 1%;
 	background: url("../travel/img/parchment.png") repeat center center;  
     /* Background pattern from subtlepatterns.com: Old map by Andreas Fohl*/
 }
@@ -186,6 +175,11 @@ article.post {
 .sidebar .widget {
     line-height: 1.5em;
     margin-bottom: 2em;
+}
+
+.textwidget img {
+    float:left;
+    margin-right: 2%;
 }
 
 /* Images */
@@ -217,20 +211,26 @@ article.post {
 
 /* comments */
 
+ul {
+  list-style:none;
+}
+
 #comments-section {
     background: url("../travel/img/parchment.png") repeat center center;  
   /* Background pattern from subtlepatterns.com: Old map by Andreas Fohl*/
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .user-comment .avatar {
     float: left;
-    border: solid 3px #2A5677;
+    border: solid 3px #B97171;
     border-radius: 5px;
     margin: 0 20px;
 }
 
 .comment-author {
-    color: #2A5677;
-    font-size: 30px;
+    color: #B97171;
+    font-size: 22px;
     font-family: 'Playball', cursive;
 }
 
@@ -241,6 +241,10 @@ article.post {
 #comments-section h1 {
     font-size: 34px;
     padding: 30px;
+}
+
+#comments-section p {
+    margin-bottom: 2%
 }
 
 #submit {
@@ -258,6 +262,7 @@ article.post {
     padding: 2%;
 }
 
+
 /* etc */
 /*Older Posts, Newer Posts*/
 .next-posts, .prev-posts {
@@ -273,7 +278,7 @@ article.post {
 
 /* override default paragraph spacing*/
 p {
-    margin: 1%;
+    margin: 1px;
 }
 
 .sticky {

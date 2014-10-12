@@ -12,17 +12,17 @@
 <div id="comments-section">
 <h3 id="comments-title">Comments</h3>
 <?php if($comments) : ?>
-  	<ol>
+  	<ul>
     	<?php foreach($comments as $comment) : ?>
   		<li id="comment-<?php comment_ID(); ?>">
   			<?php if ($comment->comment_approved == '0') : ?>
   				<p>Your comment is awaiting approval</p>
   			<?php endif; ?>
-            <span class="comment-text">
+            <span class="comment-text"><br><br>
   			<?php comment_text(); ?></span>
    <div class="user-comment">
              <?php 
-   echo get_avatar( $comment, $size = '70', $default=''); 
+   echo get_avatar( $comment, $size = '60', $default=''); 
    ?>
     
   			<p class="meta">By <span class="comment-author"><?php comment_author_link(); ?></span> on <?php comment_date(); ?> at <?php comment_time(); ?></p>
@@ -31,7 +31,7 @@
    </div>   
   		</li>
 		<?php endforeach; ?>
-	</ol>
+	</ul>
 <?php else : ?>
 	<p>No comments yet</p>
 <?php endif; ?>
@@ -41,7 +41,10 @@
 		<p>You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode(get_permalink()); ?>">logged in</a> to post a comment.</p><?php else : ?>
 		<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 			<?php if($user_ID) : ?>
-				<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Log out &raquo;</a></p>
+				<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. 
+                
+                <p><a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out »</a></p>
+                         
 			<?php else : ?>
             
 				<p><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />
@@ -51,14 +54,15 @@
 				<p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
 				<label for="url"><small>Website</small></label></p>
 			<?php endif; ?>
-			<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+			<p><textarea name="comment" id="comment" cols="50%" rows="5" tabindex="4"></textarea></p>
 			<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
 			<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /></p>
 			<?php do_action('comment_form', $post->ID); ?>
 		</form>
     
-</div>
+
 	<?php endif; ?>
+</div>
 <?php else : ?>
 	<p>The comments are closed.</p>
 <?php endif; ?>
