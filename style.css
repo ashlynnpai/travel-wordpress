@@ -221,21 +221,18 @@ ul {
   padding-left: 2%;
   padding-right: 2%;
 }
-.user-comment .avatar {
-    float: left;
+
+ol.commentlist li.comment div.vcard img.avatar {
     border: solid 3px #B97171;
     border-radius: 5px;
-    margin: 0 20px;
+    margin-right: 1%;
 }
 
 .comment-author {
     color: #B97171;
     font-size: 22px;
     font-family: 'Playball', cursive;
-}
-
-.comment-text {
-    color: #2A5677;
+    margin-top: 4%;
 }
 
 #comments-section h1 {
@@ -244,7 +241,7 @@ ul {
 }
 
 #comments-section p {
-    margin-bottom: 2%
+   margin: 1% 3%;
 }
 
 #submit {
