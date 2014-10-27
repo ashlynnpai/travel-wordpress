@@ -84,6 +84,10 @@ article.post {
     padding: 20px;
 }
 
+#single-blog {
+    padding: 0 5%;
+}
+
 #blog-head, #page-title {
     font-family: 'Playball', cursive;
 }
@@ -162,6 +166,10 @@ article.post {
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+a.navbar-brand {
+  display: none;
 }
 
 /* Sidebar */
@@ -275,7 +283,7 @@ ol.commentlist li.comment div.vcard img.avatar {
 
 /* override default paragraph spacing*/
 p {
-    margin: 1px;
+    margin: 1px 1px 2% 1px;
 }
 
 .sticky {

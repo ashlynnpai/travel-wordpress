@@ -3,7 +3,7 @@
 <div class="container-fluid">   
   <div class="blog-header"></div>
       <div class="row">     
-         <div class="col-md-9">
+         <div class="col-md-9" id="single-blog">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="page-header">      
