@@ -2,14 +2,13 @@
 
   <div class="container-fluid">   
     <div class="row" id="blog-list">
- 
-      <div class="col-md-9">
+      <div class="blog-photo">
+        <h1 id='blog-description'><?php bloginfo('description'); ?></h1>
+      </div>
+        <div class="col-md-9">
+            <h1 id="blog-head"><?php wp_title(''); ?></h1>
 
-        <div class="page-header">
-          <h1 id="blog-head"><?php wp_title(''); ?></h1>
-        </div>
-
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <?php query_posts('showposts=5'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
           <article class="post">
             
@@ -36,7 +35,7 @@
 
           <p>No content is appearing for this page!</p>
 
-        <?php endif; ?>
+        <?php endif; wp_reset_query(); ?>
 
           </div>
       
