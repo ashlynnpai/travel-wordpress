@@ -88,6 +88,10 @@ article.post {
     padding: 0 5%;
 }
 
+body.single.single-post {
+    font-size: 18px; 
+}
+
 #blog-head, #page-title {
     font-family: 'Playball', cursive;
 }
@@ -203,7 +207,7 @@ a.navbar-brand {
 .wp-caption { 
     border: 1px solid #DDDDDD;
     line-height: 2;
-    margin: 0 20px 10px;
+    margin: 0 30px 10px;
     padding: 5px 0 0;
     text-align: center;
     background: url("../travel/img/parchment.png") repeat center center; 
