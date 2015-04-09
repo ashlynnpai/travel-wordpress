@@ -20,8 +20,7 @@ body {
     font-family: 'Montserrat', 'Open Sans', sans-serif;;
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #ECD4D4;  
-    background-color: #FFF5F5;
+    background-color: #fff8f5;
     font-size: 16px;
 }
 
@@ -85,7 +84,7 @@ article.post {
 }
 
 #single-blog {
-    padding: 0 5%;
+    padding: 5%;
 }
 
 body.single.single-post {
@@ -163,17 +162,17 @@ body.single.single-post {
 }
 
 .navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
 }
 
 .navbar .navbar-collapse {
-  text-align: center;
+    text-align: center;
 }
 
 a.navbar-brand {
-  display: none;
+    display: none;
 }
 
 /* Sidebar */
@@ -195,22 +194,27 @@ a.navbar-brand {
 }
 
 /* Images */
+/*
 .blog-header {
-    background: url("../travel/img/Hicks.png") no-repeat center center; 
+    background: url("../travel/img/hay.jpg") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 400px;  
 }
+*/
 
 .wp-caption { 
     border: 1px solid #DDDDDD;
     line-height: 2;
-    margin: 0 30px 10px;
+    margin: 80px 40px;
     padding: 5px 0 0;
+    font-size: 12px;
     text-align: center;
     background: url("../travel/img/parchment.png") repeat center center; 
+    max-width: 90% !important;
+    max-height: auto  !important;
 }
 
 /* enable align image */
@@ -220,6 +224,11 @@ a.navbar-brand {
     .alignright {float:right; }
     .alignleft {float:left; }
     .aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+img {
+    max-width: 98% !important;
+    max-height: auto  !important;
+}
 
 /* comments */
 
@@ -299,3 +308,10 @@ p {
 .bypostauthor {
 }   
 
+
+@media only screen and (max-width: 680px) {
+  .navbar .nav > li > a, .nav a {
+      font-size: 12px;
+  }
+ 
+}
