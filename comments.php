@@ -66,20 +66,32 @@ return;
  
 <?php else : ?>
  
-<p><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
-<label for="author"><small>Name <?php if ($req) echo "(required)"; ?></small></label></p>
+<p>
+  <label for="author"><small>Name <?php if ($req) echo "(required)"; ?></small></label>
+  </br>  
+  <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
+</p>
+  
+<p>
+  <label for="email"><small>Email (optional, will not be published)</small></label>  
+  </br>   
+  <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
+</p>  
  
-<p><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
-<label for="email"><small>Mail (will not be published) <?php if ($req) echo "(required)"; ?></small></label></p>
- 
-<p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
-<label for="url"><small>Website</small></label></p>
+<p>
+  <label for="url"><small>Website (optional) </small></label>
+  </br>
+  <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
+</p>
  
 <?php endif; ?>
  
 <!--<p><small><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></small></p>-->
  
-<p><textarea name="comment" id="comment" cols="60%" rows="5" tabindex="4"></textarea></p>
+<p>
+  <label for="comment"><small>Your Comments</small></label>
+  <textarea name="comment" id="comment" cols="60%" rows="5" tabindex="4"></textarea>
+</p>
  
 <p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
 <?php comment_id_fields(); ?>
