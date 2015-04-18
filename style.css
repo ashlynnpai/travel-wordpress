@@ -1,6 +1,6 @@
 /*
 Theme Name: Travel
-Theme URI: www.pragmatictravel.dev
+Theme URI: www.pragmatictravel.com
 Author: Ashlynn Pai
 Author URI: http://www.ashlynnpai.com
 Description: Made for a travel site.
@@ -17,312 +17,312 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Main Layout */
 
 body {
-    font-family: 'Montserrat', 'Open Sans', sans-serif;;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    background-color: #fff8f5;
-    font-size: 16px;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #fff8f5;
+  font-size: 16px;
 }
 
 .widget {
-    padding: 0 5%;
+  padding: 0 5%;
 }
 
 /* Landing Page */
 
 .jumbotron { 
-    text-align: center;
-    height: 440px;
-    background: url("../travel/img/Dubr2.jpg") no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  text-align: center;
+  height: 440px;
+  background: url("../travel/img/Dubr2.jpg") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .jumbotron h1 {
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
-    font-size: 30px;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-size: 30px;
 }
 
 .row p {
-    font-size: 18px;
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
-    line-height: 150%;
+  font-size: 18px;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  line-height: 150%;
 }
-  
+
 #row-one {
-    background-color: #C0A2A2;
-    background-color: #DEC0C0;
-    padding: 5%;
+  background-color: #C0A2A2;
+  background-color: #DEC0C0;
+  padding: 5%;
 }
 
 #row-two {
-    background-color: #D7E5D7;
-    padding: 0 3% 3% 3%;
+  background-color: #D7E5D7;
+  padding: 0 3% 3% 3%;
 }
 
 #row-one h2, p {
-    margin: 15%;
+  margin: 15%;
 }
 
 #row-two h2, p {
-    margin: 15%;
+  margin: 15%;
 }
 
 .icon {
-    margin-left: 35%; 
+  margin-left: 35%; 
 }
 
 /* Blog */
 
 article.post {
-	margin: 20px 0 40px;
+  margin: 20px 0 40px;
 }
 
 .post {
-    padding: 20px;
+  padding: 20px;
 }
 
 #single-blog {
-    padding: 5%;
+  padding: 5%;
 }
 
 body.single.single-post {
-    font-size: 18px; 
+  font-size: 18px; 
 }
 
 #blog-head, #page-title {
-    font-family: 'Playball', cursive;
+  font-family: 'Playball', cursive;
 }
 
 #blog-listing-title {
-    padding: 0;
+  padding: 0;
 }
 
 #page-body {
-    padding-left: 5%;
+  padding-left: 5%;
 }
 
 /* Navigation */
 /*if admin bar shows, makes it smaller*/
 .admin-bar .navbar-fixed-top {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 @media (min-width:768px) {
-	.sub-menu {
-		display: none;
-		position: absolute;
-		background: #222;
-		padding: 10px 15px;
-		width: 200px;		
-	}
+.sub-menu {
+  display: none;
+  position: absolute;
+  background: #222;
+  padding: 10px 15px;
+  width: 200px;		
+}
 
-	li:hover .sub-menu {
-		display: block;
-	}
+li:hover .sub-menu {
+  display: block;
+  }
 }
 
 .sub-menu li {
-	margin-bottom: 10px;
-	list-style: none;
+  margin-bottom: 10px;
+  list-style: none;
 }
 
 .sub-menu li:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .sub-menu a  {
-	color: #DAC3C3;
-	text-decoration: none;
+  color: #DAC3C3;
+  text-decoration: none;
 }
 
 .sub-menu a:hover  {
-	color: #fff;	
+  color: #fff;	
 }	
 
 .current-menu-item > a, .current-menu-parent > a {
-	background: #000;	
+  background: #000;	
 }
 
 .current-menu-parent li a {
-	background: inherit;
+  background: inherit;
 }
 
 .current-menu-parent .current-menu-item a {
-	color: #fff;
-	font-weight: bold;
+  color: #fff;
+  font-weight: bold;
 }
 
 .navbar .nav > li > a {
-    color: #D7E5D7;
-    font-size: 18px;
-    padding-left: 10px;
-    margin-right: 20px;
+  color: #D7E5D7;
+  font-size: 18px;
+  padding-left: 10px;
+  margin-right: 20px;
 }
 
 .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
 
 .navbar .navbar-collapse {
-    text-align: center;
+  text-align: center;
 }
 
 a.navbar-brand {
-    display: none;
+  display: none;
 }
 
 /* Sidebar */
 .sidebar { 
-	margin-top: 100px;
-    padding: 1%;
-	background: url("../travel/img/parchment.png") repeat center center;  
-    /* Background pattern from subtlepatterns.com: Old map by Andreas Fohl*/
+  margin-top: 100px;
+  padding: 1%;
+  background: url("../travel/img/parchment.png") repeat center center;  
+  /* Background pattern from subtlepatterns.com: Old map by Andreas Fohl*/
 }
 
 .sidebar .widget {
-    line-height: 1.5em;
-    margin-bottom: 2em;
+  line-height: 1.5em;
+  margin-bottom: 2em;
 }
 
 .textwidget img {
-    float:left;
-    margin-right: 2%;
+  float:left;
+  margin-right: 2%;
 }
 
 /* Images */
 /*
 .blog-header {
-    background: url("../travel/img/hay.jpg") no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 400px;  
+background: url("../travel/img/hay.jpg") no-repeat center center; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 400px;  
 }
 */
 
 .wp-caption { 
-    border: 1px solid #DDDDDD;
-    line-height: 2;
-    margin: 80px 40px;
-    padding: 5px 0 0;
-    font-size: 12px;
-    text-align: center;
-    background: url("../travel/img/parchment.png") repeat center center; 
-    max-width: 90% !important;
-    max-height: auto  !important;
+  border: 1px solid #DDDDDD;
+  line-height: 2;
+  margin: 80px 40px;
+  padding: 5px 0 0;
+  font-size: 12px;
+  text-align: center;
+  background: url("../travel/img/parchment.png") repeat center center; 
+  max-width: 90% !important;
+  max-height: auto  !important;
 }
 
 /* enable align image */
-    img.alignright {float:right; margin:80px 0 80px 40px}
-    img.alignleft {float:left; margin:80px 40px 80px 0;}
-    img.aligncenter {display: block; margin: 80px auto}
-    .alignright {float:right; }
-    .alignleft {float:left; }
-    .aligncenter {display: block; margin-left: auto; margin-right: auto}
+img.alignright {float:right; margin:80px 0 80px 40px}
+img.alignleft {float:left; margin:80px 40px 80px 0;}
+img.aligncenter {display: block; margin: 80px auto}
+.alignright {float:right; }
+.alignleft {float:left; }
+.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
 img {
-    max-width: 98% !important;
-    max-height: auto  !important;
+  max-width: 98% !important;
+  max-height: auto  !important;
 }
 
 /* comments */
 
 ul {
-    list-style:none;
+  list-style:none;
 }
 
 #comments-section {
-    background: url("../travel/img/parchment.png") repeat center center;  
-    /* Background pattern from subtlepatterns.com: Old map by Andreas Fohl*/
-    padding-left: 2%;
-    padding-right: 2%;
+  background: url("../travel/img/parchment.png") repeat center center;  
+  /* Background pattern from subtlepatterns.com: Old map by Andreas Fohl*/
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 ol.commentlist li.comment div.vcard img.avatar {
-    border: solid 3px #B97171;
-    border-radius: 5px;
-    margin-right: 1%;
+  border: solid 3px #B97171;
+  border-radius: 5px;
+  margin-right: 1%;
 }
 
 .comment-author {
-    color: #B97171;
-    font-size: 22px;
-    font-family: 'Playball', cursive;
-    margin-top: 4%;
+  color: #B97171;
+  font-size: 22px;
+  font-family: 'Playball', cursive;
+  margin-top: 4%;
 }
 
 #comments-section h1 {
-    font-size: 34px;
-    padding: 30px;
+  font-size: 34px;
+  padding: 30px;
 }
 
 #comments-section p {
-    margin: 1% 3%;
+  margin: 1% 3%;
 }
 
 #comments-section text, textarea {
-    width:90%;
-    display:block;
+  width:90%;
+  display:block;
 }
 
 #submit {
-    margin-bottom: 30px; 
-    border: solid 3px #C0A2A2;
-    border-radius: 5px;
+  margin-bottom: 30px; 
+  border: solid 3px #C0A2A2;
+  border-radius: 5px;
 }
 
 #submit:hover {
-    background-color: #DBA2A2;
+  background-color: #DBA2A2;
 }
 
 #comments-title {
-    font-family: 'Playball', cursive;
-    padding: 2%;
+  font-family: 'Playball', cursive;
+  padding: 2%;
 }
 
 
 /* etc */
 /*Older Posts, Newer Posts*/
 .next-posts, .prev-posts {
-    font-size: 20px;
-    padding: 0 10% 5% 10%;
-    display: inline-block;
- }
+  font-size: 20px;
+  padding: 0 10% 5% 10%;
+  display: inline-block;
+}
 
 /*404 page*/
 .not-found {
-    background: url("../travel/img/kat.png") no-repeat center center fixed; 
-    /*phphoto 2010, CC by ND 2.0*/
-    background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    width: 100%;
-    height: 100%;
-    min-height: 1000px;
+  background: url("../travel/img/kat.png") no-repeat center center fixed; 
+  /*phphoto 2010, CC by ND 2.0*/
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 1000px;
 }
 
 #not-found_text {
-    text-align: center;
-    color: #EB2BA0;
-    margin-top: 50px;
-    font-size: 30px;
+  text-align: center;
+  color: #EB2BA0;
+  margin-top: 50px;
+  font-size: 30px;
 }
 
 /*Slideshow description section*/
 .slideshow_container_slideshow-jquery-image-gallery-custom-styles_1 .slideshow_pagination {
-    bottom: 16px;
+  bottom: 16px;
 }
 
 /* override default paragraph spacing*/
 p {
-    margin: 1px 1px 2% 1px;
+  margin: 1px 1px 2% 1px;
 }
 
 .sticky {
@@ -337,11 +337,11 @@ p {
 
 @media only screen and (max-width: 680px) {
   .navbar .nav > li > a, .nav a {
-      font-size: 12px;
-  }
-  
-    #not-found_text {
-      font-size: 20px;
-  }
- 
+    font-size: 12px;
+}
+
+#not-found_text {
+  font-size: 20px;
+}
+
 }
