@@ -288,11 +288,20 @@ ol.commentlist li.comment div.vcard img.avatar {
 
 
 /* etc */
-/*Older Posts, Newer Posts*/
+
+/*Older Posts, Newer Posts, Tags*/
 .next-posts, .prev-posts {
-  font-size: 20px;
-  padding: 0 10% 5% 10%;
-  display: inline-block;
+    font-size: 20px;
+    padding: 0 10% 5% 10%;
+    display: inline-block;
+ }
+
+.next-posts a, .prev-posts a {
+    color: #00974E;
+ }
+
+#vertical-space {
+    margin-top: 100px; 
 }
 
 /*404 page*/
