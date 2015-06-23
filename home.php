@@ -2,13 +2,14 @@
 
   <div class="container-fluid">   
     <div class="row" id="blog-list">
-      <div class="blog-photo">
-        <h1 id='blog-description'><?php bloginfo('description'); ?></h1>
-      </div>
-        <div class="col-md-9">
-            <h1 id="blog-head"><?php wp_title(''); ?></h1>
+ 
+      <div class="col-md-9">
 
-      <?php query_posts('showposts=5'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <div class="page-header">
+          <h1 id="blog-head"><?php wp_title(''); ?></h1>
+        </div>
+
+      <?php query_posts('showposts=10'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
           <article class="post">
             
@@ -21,7 +22,7 @@
             </p>
 
             <hr>
-
+            
             <?php the_excerpt(); ?>
 
           </article>
