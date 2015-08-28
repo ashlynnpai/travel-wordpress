@@ -1,32 +1,37 @@
 <?php get_header(); ?>
 
 <div class="contentmain" >
-<div id="content" class="col-md-9">
-	<?php if (have_posts()) : ?>
+  <div id="content" class="col-md-9">
+    <h2 id="vertical-space">Search results for "<?php the_search_query(); ?>"</h2>
+    <?php if (have_posts()) : ?>
 
-		<?php while (have_posts()) : the_post(); ?>
+    <?php while (have_posts()) : the_post(); ?>
 
-	<div class="post" id="post-<?php the_ID(); ?>">
-		<h1 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-		<p class="meta"><small>Posted on <?php the_time('F jS, Y') ?> by <?php the_author() ?> <?php edit_post_link('Edit', ' | ', ''); ?></small></p>
-		<div class="entry">
-			<?php the_excerpt(); ?>
-		</div>
-        <div class="info">
-		<p class="links">&raquo; <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></p>
-		<p class="tags"><?php the_tags('Tags: ', ', ', ' '); ?></p>
-        </div>
-	</div>
+    <div class="post" id="post-<?php the_ID(); ?>">
+      <h3 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+      <p class="meta"><small>Posted on <?php the_time('F jS, Y') ?> by <?php the_author() ?> <?php edit_post_link('Edit', ' | ', ''); ?></small></p>
+      <div class="entry">
+        <?php the_excerpt(); ?>
+      </div>
+      <div class="info">
+        <p class="links">&raquo; <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></p>
+        <p class="tags" id="vertical-space"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/tag.png" &nbsp; >  <?php the_tags(); ?></p>
+      </div>
+    </div>
+    
     <?php endwhile; ?>
-    	<div class="navigation">
-			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-		</div>
-<?php else : ?>
-	<h2 class="center">Not Found</h2>
-	<p class="center">Sorry, but you are looking for something that isn't here.</p>
-<?php endif; ?>
+
+    <?php posts_nav_link( ' -- ', '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/img/left.png" />' . ' Back to Previous Results', 'More Results ' . '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/img/right.png" />' ); ?>
+
+    <?php else : ?>
+    
+    <h2 class="center">No Results Found</h2>
+    <p class="center">Sorry, nothing came up in this search.</p>
+    
+    <?php endif; ?>
+    <?php get_footer(); ?>
+  </div>
 </div>
-</div>
+
+
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
