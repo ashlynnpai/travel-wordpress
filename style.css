@@ -70,9 +70,6 @@ body {
   margin: 15%;
 }
 
-.icon {
-  margin-left: 35%; 
-}
 
 /* Blog */
 
@@ -92,9 +89,6 @@ body.single.single-post {
   font-size: 18px; 
 }
 
-#blog-head, #page-title {
-  font-family: 'Playball', cursive;
-}
 
 #blog-listing-title {
   padding: 0;
@@ -296,9 +290,6 @@ ol.commentlist li.comment div.vcard img.avatar {
     display: inline-block;
  }
 
-.next-posts a, .prev-posts a {
-    color: #00974E;
- }
 
 #vertical-space {
     margin-top: 100px; 
@@ -343,6 +334,23 @@ p {
 .bypostauthor {
 }   
 
+a {
+  color: #595560;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #95919C;
+  font-size: 1.1em;
+}
+
+
+.navbar .nav > li > a {
+  color: #D7E5D7;
+  font-size: 18px;
+  padding-left: 10px;
+  margin-right: 20px;
+}
 
 @media only screen and (max-width: 680px) {
   .navbar .nav > li > a, .nav a {
