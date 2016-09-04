@@ -174,8 +174,6 @@ a.navbar-brand {
 .sidebar { 
   margin-top: 100px;
   padding: 1%;
-  background: url("../travel/img/parchment.png") repeat center center;  
-  /* Background pattern from subtlepatterns.com: Old map by Andreas Fohl*/
 }
 
 .sidebar .widget {
@@ -183,11 +181,28 @@ a.navbar-brand {
   margin-bottom: 2em;
 }
 
+.sidebar .widget h3{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.sidebar .widget li{
+  margin-top: 5px;
+}
+
 .textwidget img {
   float:left;
   margin-right: 2%;
 }
 
+#searchform {
+  text-align: center;
+}
+
+input#s {
+  border-radius: 10px;
+  background-color: #F5FFEA;
+}
 /* Images */
 /*
 .blog-header {
