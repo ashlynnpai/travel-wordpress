@@ -247,8 +247,6 @@ ul {
 }
 
 #comments-section {
-  background: url("../travel/img/parchment.png") repeat center center;  
-  /* Background pattern from subtlepatterns.com: Old map by Andreas Fohl*/
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -262,7 +260,6 @@ ol.commentlist li.comment div.vcard img.avatar {
 .comment-author {
   color: #B97171;
   font-size: 22px;
-  font-family: 'Playball', cursive;
   margin-top: 4%;
 }
 
@@ -291,10 +288,20 @@ ol.commentlist li.comment div.vcard img.avatar {
 }
 
 #comments-title {
-  font-family: 'Playball', cursive;
   padding: 2%;
 }
 
+#respond {
+  padding-left: 2%;
+  padding-top: 2%;
+  margin-top: 50px;
+}
+
+.comment-field {
+  border-radius: 8px;
+  background-color: #F5FFEA;
+  margin-top: 1%;
+}
 
 /* etc */
 
@@ -355,8 +362,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #95919C;
-  font-size: 1.1em;
+  color: #5ADF7C;
 }
 
 

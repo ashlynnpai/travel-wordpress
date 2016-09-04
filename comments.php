@@ -14,10 +14,9 @@ return;
 <!-- You can start editing here. -->
  
 <div id="comments-section">
-<h3 id="comments-title">Comments</h3>
+<h3 id="comments-title">COMMENTS</h3>
   
 <?php if ( have_comments() ) : ?>
-<h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
  
 <div class="navigation">
 <div class="alignleft"><?php previous_comments_link() ?></div>
@@ -66,22 +65,17 @@ return;
  
 <?php else : ?>
  
-<p>
-  <label for="author"><small>Name <?php if ($req) echo "(required)"; ?></small></label>
-  </br>  
-  <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
+<p><strong>Only the name field is required. Your email will not be published.</strong></p>    
+<p> 
+  <input type="text" name="author" id="author" placeholder="Name" class="comment-field" value="<?php echo $comment_author; ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
 </p>
   
-<p>
-  <label for="email"><small>Email (optional, will not be published)</small></label>  
-  </br>   
-  <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
+<p> 
+  <input type="text" name="email" id="email" placeholder="Email" class="comment-field" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
 </p>  
  
 <p>
-  <label for="url"><small>Website (optional) </small></label>
-  </br>
-  <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
+  <input type="text" name="url" id="url" placeholder="Website" class="comment-field" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
 </p>
  
 <?php endif; ?>
@@ -90,7 +84,7 @@ return;
  
 <p>
   <label for="comment"><small>Your Comments</small></label>
-  <textarea name="comment" id="comment" cols="60%" rows="5" tabindex="4"></textarea>
+  <textarea name="comment" id="comment" class="comment-field" cols="60%" rows="5" tabindex="4"></textarea>
 </p>
  
 <p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
