@@ -202,7 +202,20 @@ a.navbar-brand {
 input#s {
   border-radius: 10px;
   background-color: #F5FFEA;
+  min-height: 35px;
 }
+
+#search-button {
+  background-color: #fff8f5;
+}
+
+
+textarea:focus, input:focus, .uneditable-input:focus, button:focus {   
+  border-color: #D8CAC4 !important;
+  box-shadow: 0 1px 1px #D8CAC4 inset, 0 0 8px #D8CAC4 !important;
+  outline: 0 none !important;
+}
+
 /* Images */
 /*
 .blog-header {
