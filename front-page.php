@@ -2,19 +2,19 @@
 
     <!-- Main jumbotron -->
     
-      <div class="container-fluid">
-        <div class="jumbotron">
-            <div id="header-image">
-              
-      <!-- Makes text content editable through Edit Page "Home" -->        
+      
+    <div class="jumbotron">
+        <div id="header-image">
+      
+    <!-- Makes text content editable through Edit Page "Home" -->        
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-          <?php the_content(); ?>
-    
-        <?php endwhile; endif; ?>
-            </div>
+            <?php the_content(); ?>
+
+            <?php endwhile; endif; ?>
         </div>
-          
+    </div>
+    <div class="container-fluid">     
     <!-- Rows -->
     <!-- First row uses widgets to control content -->
     <div class="row" id="row-one">
