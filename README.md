@@ -15,7 +15,7 @@ To edit the landing page, go to front-page.php and replace the placeholder text 
 Most other aspects are customized through the dashboard, including the navigation and sidebar content. The sidebar is displayed on the right side.
 You may create a link in the navigation to the list of blog posts if you prefer.
 
-![Alt text](screenshot.jpg?raw=true "Travel Theme Landing Page")
+<img src="screenshot.jpg" alt="Travel Theme Landing Page" style="width: 400px;"/>
 
 This landing page is customized with widgets for a slideshow and most recent post.
 
