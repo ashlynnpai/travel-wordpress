@@ -1,8 +1,12 @@
 
 Theme: Travel
+
 Author: Ashlynn Pai
+
 Twitter: @ashlynnpai
+
 Description: This is a Wordpress theme made with Bootstrap v3.2.0.
+
 Tags: right-sidebar, front-page, responsive
 
 This is a Wordpress theme with a full-width landing page with a large photo section, one row section which is customized through the dashboard, and one row section which contains placeholder text.
