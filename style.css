@@ -30,10 +30,10 @@ body {
 
 /* Landing Page */
 
-.jumbotron { 
+.jumbotron {
   text-align: center;
   height: 440px;
-  background: url("../travel/img/Dubr2.jpg") no-repeat center center; 
+  background: url("../travel/img/Dubr2.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -86,7 +86,7 @@ article.post {
 }
 
 body.single.single-post {
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 
@@ -110,7 +110,7 @@ body.single.single-post {
   position: absolute;
   background: #222;
   padding: 10px 15px;
-  width: 200px;		
+  width: 200px;
 }
 
 li:hover .sub-menu {
@@ -133,11 +133,11 @@ li:hover .sub-menu {
 }
 
 .sub-menu a:hover  {
-  color: #fff;	
-}	
+  color: #fff;
+}
 
 .current-menu-item > a, .current-menu-parent > a {
-  background: #000;	
+  background: #000;
 }
 
 .current-menu-parent li a {
@@ -171,7 +171,7 @@ a.navbar-brand {
 }
 
 /* Sidebar */
-.sidebar { 
+.sidebar {
   margin-top: 100px;
   padding: 1%;
 }
@@ -210,7 +210,7 @@ input#s {
 }
 
 
-textarea:focus, input:focus, .uneditable-input:focus, button:focus {   
+textarea:focus, input:focus, .uneditable-input:focus, button:focus {
   border-color: #D8CAC4 !important;
   box-shadow: 0 1px 1px #D8CAC4 inset, 0 0 8px #D8CAC4 !important;
   outline: 0 none !important;
@@ -219,23 +219,21 @@ textarea:focus, input:focus, .uneditable-input:focus, button:focus {
 /* Images */
 /*
 .blog-header {
-background: url("../travel/img/hay.jpg") no-repeat center center; 
+background: url("../travel/img/hay.jpg") no-repeat center center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-height: 400px;  
+height: 400px;
 }
 */
 
-.wp-caption { 
-  border: 1px solid #DDDDDD;
+.wp-caption {
   line-height: 2;
   margin: 80px 40px;
   padding: 5px 0 0;
   font-size: 12px;
   text-align: center;
-  background: url("../travel/img/parchment.png") repeat center center; 
   max-width: 90% !important;
   max-height: auto  !important;
 }
@@ -291,7 +289,7 @@ ol.commentlist li.comment div.vcard img.avatar {
 }
 
 #submit {
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   border: solid 3px #C0A2A2;
   border-radius: 5px;
 }
@@ -327,12 +325,12 @@ ol.commentlist li.comment div.vcard img.avatar {
 
 
 #vertical-space {
-    margin-top: 100px; 
+    margin-top: 100px;
 }
 
 /*404 page*/
 .not-found {
-  background: url("../travel/img/kat.png") no-repeat center center fixed; 
+  background: url("../travel/img/kat.png") no-repeat center center fixed;
   /*phphoto 2010, CC by ND 2.0*/
   background-size: cover;
   -moz-background-size: cover;
@@ -367,7 +365,7 @@ p {
 }
 
 .bypostauthor {
-}   
+}
 
 a {
   color: #595560;
